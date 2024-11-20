@@ -92,3 +92,7 @@ python3 examples/pytorch/dependency-parsing/run_udp_fusion.py --do_train=False -
 
 ## Acknowledgement
 This work is implemented based on [adapter-transformers](https://github.com/adapter-hub/adapter-transformers).
+
+This research was partially supported by the MSIT (Ministry of Science and ICT), Korea, under the ITRC (Information Technology Research Center) support program (IITP-2024-2020-0-01789) supervised by the IITP (Institute for Information & Communications Technology Planning & Evaluation).
+This work was also partially supported by IITP grant funded by MSIT (No.2022-0-00077, AI Technology Development for Commonsense Extraction, Reasoning, and Inference from Heterogeneous Data).
+We would also like to thank Google’s TPU Research Cloud (TRC) program for providing Cloud TPUs.
