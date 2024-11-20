@@ -28,6 +28,26 @@ after replacing `<seed>` and `<gpus>` to proper values.
 
 ## Reference
 
-**This paper will be presented at EMNLP 2023 but is not published yet.**
+```
+@inproceedings{lee-etal-2023-learning,
+    title = "Learning to Rank Generation with Pairwise Partial Rewards",
+    author = "Lee, Youngwon  and
+      Lee, Jinu  and
+      Hwang, Seung-won",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.371",
+    doi = "10.18653/v1/2023.emnlp-main.371",
+    pages = "6078--6092",
+}
 
-{Youngwon Lee, Jinu Lee} and Seung-won Hwang. Learning to Rank Generation with Pairwise Partial Rewards. EMNLP 2023, to appear.
+```
+
+## Acknowledgment
+This work was supported by Institute of Information & Communications Technology Planning & Evaluation (IITP) grant funded by the Korean government (MSIT) (No. 2022-0-00077, AI Technology Development for Commonsense Extraction, Reasoning, and Inference from Heterogeneous Data).
