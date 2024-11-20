@@ -55,3 +55,7 @@ If you find this code helpful, please consider citing:
     doi = "10.18653/v1/2023.findings-acl.543",
 }
 ```
+
+## Acknowledgment
+This research was supported by MSIT (Ministry of Science and ICT), Korea, under the ITRC (Information
+Technology Research Center) support program (IITP-2023-2020-0-01789) and grants [NO.2021-0-0268, AI Hub, SNU], [No.2022-0-00077, AI Technology Development for Commonsense Extraction, Reasoning, and Inference from Heterogeneous Data], and [NO.2021-0-01343, AI Graduate School] supervised by the IITP (Institute for Information & Communications Technology Planning & Evaluation).
