@@ -100,6 +100,25 @@ python -m run_retrieval \
 
 ## Reference
 
-**This paper will be presented at EMNLP 2023 but is not published yet.**
+```
+@inproceedings{kim-etal-2023-relevance,
+    title = "Relevance-assisted Generation for Robust Zero-shot Retrieval",
+    author = "Kim, Jihyuk  and
+      Kim, Minsoo  and
+      Park, Joonsuk  and
+      Hwang, Seung-won",
+    editor = "Wang, Mingxuan  and
+      Zitouni, Imed",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-industry.67",
+    doi = "10.18653/v1/2023.emnlp-industry.67",
+    pages = "723--731",
+}
+```
 
-Jihyuk Kim, Minsoo Kim, Joonsuk Park, and Seung-won Hwang. Relevance-assisted Generation for Robust Zero-shot Retrieval. EMNLP 2023 (industry track), to appear.
+## Acknowledgment
+This work has been financially supported by SNUNAVER Hyperscale AI Center, and Institute of Information & communications Technology Planning & Evaluation(IITP) grant funded by the Korea government(MSIT) (NO.2022-0-00077, AI Technology Development for Commonsense Extraction, Reasoning, and Inference from Heterogeneous Data).
