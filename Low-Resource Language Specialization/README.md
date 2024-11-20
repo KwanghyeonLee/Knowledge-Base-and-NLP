@@ -218,3 +218,10 @@ If you find this code helpful, please consider citing:
 	year = {2023}
 }
 ```
+
+## Acknowledgement
+This research was supported by the MSIT (Ministry of Science and ICT), Korea, under the ITRC (Information
+Technology Research Center) support program (IITP-2022-2020-0-01789) supervised by the IITP(Institute for Information & Communications Technology Planning & Evaluation).
+This work was also supported by IITP grants funded by the MSIT [No.2022-0-00077, AI Technology Development
+for Commonsense Extraction, Reasoning, and Inference from Heterogeneous Data], [NO.2021-0-0268, Artificial Intelligence Innovation Hub (Artificial Intelligence Institute, Seoul National University)], and [NO.2021-0-01343, Artificial Intelligence Graduate School Program (Seoul National University)].
+We would like to thank Google’s TPU Research Cloud (TRC) program for providing Cloud TPUs.
