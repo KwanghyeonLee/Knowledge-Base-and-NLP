@@ -1,0 +1,10 @@
+defaults:
+  - default.yaml
+
+student:
+  _target_: distilColBERT.model.modules.single_vector.DenseAttn
+  bert_name_or_module: distilbert-base-uncased
+  similarity_fn: dot
+
+train_loss:
+  _target_: distilColBERT.losses.single.MarginDistillationLoss

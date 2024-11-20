@@ -1,0 +1,32 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - tokenizer: default.yaml
+  - datamodule: default.yaml # choose datamodule with `test_dataloader()` for evaluation
+  - model: default.yaml
+  - callbacks:
+      - retrieval_evaluation_with_disk_writer.yaml
+      - rich_progress_bar.yaml
+  - logger: wandb.yaml
+  - trainer: default.yaml
+  - paths: default.yaml
+  - extras: default.yaml
+  - hydra: default.yaml
+
+  - experiment: null
+
+task_name: "eval"
+
+# passing checkpoint path is necessary for evaluation
+ckpt_path: ???
+
+run_name: tmp
+
+logger:
+  wandb:
+    name: ${run_name}
+    tags: ${tags}
+
+# seed for random number generators in pytorch, numpy and python.random
+seed: 42

@@ -1,0 +1,9 @@
+retrieval_evaluation_with_disk_writer:
+  _target_: src.utils.callback.RetrievalEvaluationWithDiskWriter
+  output_dir: ${paths.tmp_dir}/${datamodule.train_dataset}
+  experiment_name: ${hydra:runtime.choices.experiment}
+  method_name: ${method_name}
+  model_type: ${model_type}
+  dataset_name: ${datamodule.train_dataset}
+
+

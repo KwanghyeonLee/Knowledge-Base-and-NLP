@@ -1,0 +1,50 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: gpl-and-beir.yaml
+  - override /model: dense
+  - override /tokenizer: dense-no-skip
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+method_name: ???
+model_type: ???
+dataset: ???
+
+teacher: splade
+student: dense
+tags: ["ramda", "gpl-base"]
+
+seed: 42
+
+tokenizer:
+  model_name_or_path: OpenMatch/cocodr-base-msmarco
+
+model:
+  model:
+    bert_name_or_module:
+      _target_: src.models.trainer.HybridRetrievalModel.load_from_checkpoint
+      checkpoint_path: ${ckpt_path}
+      strict: false
+      train_loss: null
+      val_loss: null
+
+  optimizer:
+    lr: 2e-5
+
+trainer:
+  min_epochs: 1
+  max_epochs: 1
+  num_sanity_val_steps: 32
+  val_check_interval: 5_000
+
+datamodule:
+  train_batch_size: 16
+  test_batch_size: 32
+  train_dataset: ${dataset}
+  test_datasets:
+    - ${dataset}

@@ -1,0 +1,12 @@
+defaults:
+  - default.yaml
+
+_target_: src.models.trainer.GPLRetrievalModel
+model:
+  _target_: src.models.components.single_vector.NaiveDense
+  bert_name_or_module: Luyu/co-condenser-marco
+  similarity_fn: dot
+  pooling_method: cls
+
+train_loss:
+  _target_: src.losses.single.MarginDistillationLoss

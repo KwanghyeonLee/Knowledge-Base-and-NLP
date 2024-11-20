@@ -1,0 +1,4 @@
+defaults:
+  - default.yaml
+
+_target_: src.data2tensor.no_skiplist.NoSkipListTokenizer

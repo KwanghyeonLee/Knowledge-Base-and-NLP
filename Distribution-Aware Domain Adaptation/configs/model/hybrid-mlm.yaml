@@ -1,0 +1,20 @@
+defaults:
+  - default.yaml
+
+_target_: src.models.trainer.HybridDenseMLMRetrievalModel
+
+model:
+  _target_: src.models.components.single_vector.SimpleDense
+#  Luyu/co-condenser-marco
+#  bert_name_or_module: sentence-transformers/msmarco-distilbert-base-v3
+
+  bert_name_or_module: Luyu/co-condenser-marco
+  similarity_fn: dot
+  pooling_method: cls
+
+sparse:
+  _target_: src.models.components.sparse.MLMHead
+  bert_name_or_module: Luyu/co-condenser-marco
+
+train_loss:
+  _target_: src.losses.hybrid.Dense2SparseMapCriterion

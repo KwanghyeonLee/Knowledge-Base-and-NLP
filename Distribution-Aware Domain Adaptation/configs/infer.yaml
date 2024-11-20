@@ -1,0 +1,27 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - tokenizer: default.yaml
+  - datamodule: gpl-and-beir.yaml # choose datamodule with `test_dataloader()` for evaluation
+  - model: default.yaml
+  - callbacks:
+      - rich_progress_bar.yaml # rich_progress_bar only needed for eval.
+  - logger: null
+  - trainer: default.yaml
+  #  - trainer: cpu.yaml
+  - paths: default.yaml
+  - extras: default.yaml
+  - hydra: default.yaml
+
+  - experiment: null
+
+task_name: "infer"
+
+# passing checkpoint path is necessary for evaluation
+ckpt_path: ???
+
+logger:
+  wandb:
+    name: t=${teacher},s=${student}
+    tags: ${tags}

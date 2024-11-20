@@ -1,0 +1,36 @@
+_target_: src.datamodule.datamodule.RetrievalDataModule
+shuffle_train: false
+dada_dir: ${paths.dada_dir}
+ramda_data_dir: ${paths.ramda_dir}
+m2m_data_dir: ${paths.m2m_dir}
+gpl_data_dir: ${paths.gpl_dir}
+beir_data_dir: ${paths.beir_dir}
+rerank_data_dir: ${paths.rerank_dir}
+hyde_dir: ${paths.hyde_dir}
+rerank_topk: 100
+rerank: False
+tokenizer: ${tokenizer}
+train_max_step: 1_280_000
+train_batch_size: 16
+test_batch_size: 64
+workers: 0
+train_dataset_type: beir
+train_dataset: msmarco
+test_dataset_type: beir
+test_datasets:
+  - cqadupstack/android
+  - cqadupstack/english
+  - cqadupstack/gaming
+  - cqadupstack/gis
+  - cqadupstack/mathematica
+  - cqadupstack/physics
+  - cqadupstack/programmers
+  - cqadupstack/stats
+  - cqadupstack/tex
+  - cqadupstack/unix
+  - cqadupstack/webmasters
+  - cqadupstack/wordpress
+#  - robust-04
+#  - signal-1M
+#  - trec-news
+#  - bioasq

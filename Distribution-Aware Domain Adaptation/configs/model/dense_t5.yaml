@@ -1,0 +1,11 @@
+defaults:
+  - default.yaml
+
+model:
+  _target_: src.models.components.single_vector.DenseT5
+  bert_name_or_module: BeIR/query-gen-msmarco-t5-base-v1
+  similarity_fn: dot
+  pooling_method: cls
+
+train_loss:
+  _target_: src.losses.single.InBatchContrastiveLoss

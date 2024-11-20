@@ -1,0 +1,60 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: gpl-and-beir-curr.yaml
+  - override /model: hybrid
+  - override /tokenizer: hybrid
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# Datasets small to large
+########scifact
+#######tcovid`
+#######scidocs
+#######fiqa
+#######robust
+#######cqad
+#######bioasq
+#######climate
+
+teacher: splade
+student: dense
+tags: ["splade", "mapper"]
+
+seed: 42
+
+trainer:
+  min_epochs: 1
+  max_epochs: 1
+  num_sanity_val_steps: 32
+  val_check_interval: 5_000
+
+tokenizer:
+  dense:
+    model_name_or_path: OpenMatch/cocodr-base-msmarco
+
+model:
+  model:
+    bert_name_or_module: OpenMatch/cocodr-base-msmarco
+    pooling_method: cls
+
+  optimizer:
+    lr: 2e-5
+  train_loss:
+    _target_: src.losses.hybrid.Dense2SparseMapSemanticIDFNormCriterion
+    norm_method: tanh_zscore_eps
+    idf_path:
+#      ${paths.beir_dir}/${datamodule.train_dataset}/idf/idfs_zero_unseen.json
+      ${paths.beir_dir}/${datamodule.train_dataset}/idf/idfs.json
+#      ${paths.atds_dir}/${datamodule.train_dataset}/idf_v2.json
+    map_method:
+      max
+
+datamodule:
+  train_batch_size: 16
+  test_batch_size: 32
+

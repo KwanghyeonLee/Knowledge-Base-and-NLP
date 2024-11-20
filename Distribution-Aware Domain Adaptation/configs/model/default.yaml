@@ -1,0 +1,25 @@
+_target_: src.models.trainer.RetrievalModel
+
+model: ???
+train_loss: ???
+
+val_loss:
+  _target_: src.metrics.eval.EvaluationMetric
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 2e-4 # experimental use
+  #  lr: 2e-5
+  weight_decay: 0.01
+
+# https://peltarion.com/knowledge-center/modeling-view/run-a-model/optimization-principles-(in-deep-learning)/learning-rate-schedule
+# reduce_on_plateau 시도해보는 것도?
+scheduler:
+  _target_: src.models.utils.get_scheduler
+  _partial_: true
+  scheduler: WarmupLinear
+  warmup_steps: 10_000
+  num_devices: ${trainer.devices}
+  t_total: ${datamodule.train_max_step}
+

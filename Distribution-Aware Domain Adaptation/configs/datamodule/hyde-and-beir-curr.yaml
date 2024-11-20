@@ -1,0 +1,7 @@
+defaults:
+  - default.yaml
+
+train_dataset_type: hyde
+train_dataset: trec-covid-v2
+shuffle_train: False
+curriculum: curriculum-gpl-training-data.tsv

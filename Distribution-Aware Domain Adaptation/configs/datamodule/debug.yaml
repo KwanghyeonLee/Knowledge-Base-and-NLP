@@ -1,0 +1,17 @@
+defaults:
+  - default.yaml
+
+test_datasets:
+  - arguana
+#  - scifact
+  - scidocs
+  - fiqa
+  - webis-touche2020
+#  - nfcorpus
+  - trec-covid
+#  - quora
+#  - nq
+#  - hotpotqa
+#  - dbpedia-entity
+#  - fever
+#  - climate-fever

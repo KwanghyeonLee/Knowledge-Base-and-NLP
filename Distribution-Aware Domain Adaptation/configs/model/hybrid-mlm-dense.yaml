@@ -1,0 +1,22 @@
+defaults:
+  - default.yaml
+
+_target_: src.models.trainer.HybridRetrievalModel
+
+model:
+  _target_: src.models.components.single_vector.DenseMLM
+#  Luyu/co-condenser-marco
+#  bert_name_or_module: sentence-transformers/msmarco-distilbert-base-v3
+
+  bert_name_or_module: Luyu/co-condenser-marco
+  similarity_fn: dot
+  pooling_method: cls
+
+sparse:
+  _target_: src.models.components.sparse.SimpleSPLADE
+  bert_name_or_module: naver/splade_v2_distil
+  # https://arxiv.org/pdf/2107.05720.pdf
+  similarity_fn: dot
+
+train_loss:
+  _target_: src.losses.hybrid.Dense2SparseMapCriterion

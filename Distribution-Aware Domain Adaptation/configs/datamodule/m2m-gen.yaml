@@ -1,0 +1,9 @@
+defaults:
+  - default.yaml
+
+train_dataset_type: m2m
+shuffle_train: False
+
+
+train_batch_size: 32
+test_batch_size: 64

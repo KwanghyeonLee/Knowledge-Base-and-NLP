@@ -1,0 +1,30 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: gpl-and-beir.yaml
+  - override /model: colbert.yaml
+  - override /callbacks: default.yaml
+  - override /trainer: default.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+teacher: ce
+student: colbert
+tags: ["colbert"]
+
+seed: 42
+
+trainer:
+  min_epochs: 1
+  max_epochs: 1
+
+model:
+  optimizer:
+    lr: 2e-5
+
+datamodule:
+  train_batch_size: 32

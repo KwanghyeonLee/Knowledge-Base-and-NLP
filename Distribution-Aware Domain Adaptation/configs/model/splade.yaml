@@ -1,0 +1,11 @@
+defaults:
+  - default.yaml
+
+model:
+  _target_: src.models.components.sparse.SPLADE
+  bert_name_or_module: naver/splade-cocondenser-ensembledistil
+  # https://arxiv.org/pdf/2107.05720.pdf
+  similarity_fn: dot
+
+train_loss:
+  _target_: src.losses.single.MarginDistillationLoss

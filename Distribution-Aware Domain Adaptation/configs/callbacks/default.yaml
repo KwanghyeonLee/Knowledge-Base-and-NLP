@@ -1,0 +1,31 @@
+defaults:
+  - model_checkpoint.yaml
+  - model_summary.yaml
+  - rich_progress_bar.yaml
+  - retrieval_evaluation_with_disk_writer.yaml
+  - _self_
+
+  # Activate early stopping if needed
+  #  - early_stopping.yaml
+
+model_checkpoint:
+  dirpath: ${paths.output_dir}/checkpoints
+  filename: "{step}-{loss:.2f}"
+  save_top_k: -1
+  auto_insert_metric_name: True
+  every_n_train_steps: 5_000
+
+model_last_checkpoint:
+  dirpath: ${paths.output_dir}/checkpoints
+  save_top_k: 1
+  save_last: True
+  every_n_epochs: 1
+  save_on_train_epoch_end: True
+
+#early_stopping:
+#  monitor: "val/acc"
+#  patience: 100
+#  mode: "max"
+
+model_summary:
+  max_depth: 1

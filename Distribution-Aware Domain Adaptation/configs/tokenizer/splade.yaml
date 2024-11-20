@@ -1,0 +1,11 @@
+_target_: src.data2tensor.hybrid.HybridTokenizer
+dense:
+  _target_: src.data2tensor.no_skiplist.NoSkipListTokenizer
+  model_name_or_path: sentence-transformers/msmarco-distilbert-base-v3
+  max_query_length: 64
+  max_doc_length: 256
+sparse:
+  _target_: src.data2tensor.no_skiplist.NoSkipListTokenizer
+  model_name_or_path: naver/splade_v2_distil
+  max_query_length: 64
+  max_doc_length: 256

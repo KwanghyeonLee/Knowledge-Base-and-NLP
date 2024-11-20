@@ -1,0 +1,19 @@
+defaults:
+  - default.yaml
+
+_target_: src.models.trainer.HybridRetrievalModel
+
+model:
+  _target_: src.models.components.single_vector.DenseT5
+  bert_name_or_module: BeIR/query-gen-msmarco-t5-base-v1
+  similarity_fn: dot
+  pooling_method: cls
+
+sparse:
+  _target_: src.models.components.sparse.SPLADE
+  bert_name_or_module: naver/splade_v2_distil
+  # https://arxiv.org/pdf/2107.05720.pdf
+  similarity_fn: dot
+
+train_loss:
+  _target_: src.losses.hybrid.Dense2SparseMapCriterion
