@@ -4,9 +4,6 @@
 #### This repository summarizes following researches.
 
 ## Research list
-* Inductive Reasoning Elicitation for Temporal Relation Understanding (EACL 2024) - Jongho Kim, Dohyeon Lee, Minsoo Kim, and Seung-won Hwang.
-
-  * The proposed TRN (timeline reasoning network) outperforms previous methods for temporal reading comprehension and temporal relation extraction tasks, by effectively resolving the spurious overlaps in answers using the predicted timeline.
     
 * CoTEVer: Chain of Thought Prompting Annotation Toolkit for Explanation Verification (EACL 2023) - Seungone Kim, Se June Joo, Yul Jang, Hyungjoo Chae, and Jinyoung Yeo.
 
@@ -56,4 +53,6 @@
 
   * The proposed relevance-guided generation, is divided in two simple subtasks, generating relevance explanations and guiding the generation to avoid negative generalization. Relevance-guided generation method is more robust to domain shifts when key biases cause sampled Psuedo Queries (PQ) to be irrelevant, negatively contributing to generalization. 
 
+* Inductive Reasoning Elicitation for Temporal Relation Understanding (EACL 2024) - Jongho Kim, Dohyeon Lee, Minsoo Kim, and Seung-won Hwang.
 
+  * The proposed TRN (timeline reasoning network) outperforms previous methods for temporal reading comprehension and temporal relation extraction tasks, by effectively resolving the spurious overlaps in answers using the predicted timeline.
