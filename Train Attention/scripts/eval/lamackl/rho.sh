@@ -1,0 +1,26 @@
+#kadapter
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7,0 MASTER_PORT=12356 python evaluation_run.py \
+--meta_type="trex" \
+--gpu_train_batch_size=4 \
+--train_grad_accum="true" \
+--train_grad_accum_step=2 \
+--train_lr=1e-4 \
+--max_epochs=30 \
+--theta_adapter_file="Llama-2-7b" \
+--theta_model_name="meta-llama/Llama-2-7b-hf" \
+--phi_adapter_file="Llama-2-1b" \
+--phi_model_name="TinyLlama/TinyLlama-1.1B-Chat-v1.0" \
+--phi_checkpoint="checkpoints/lamackl/chekpoint_0.pkl" \
+--eval_batch_size=8 \
+--test_type="finetune" \
+--model_type="qlora" \
+--train_data="./data/LAMA_ckl/variant.jsonl" \
+--eval_data_changed="./data/LAMA_ckl/variant.jsonl" \
+--eval_data_unchanged="./data/LAMA_ckl/invariant_descriptive.jsonl" \
+--review_data="none" \
+--add_to_title="rho" \
+--task_type="descriptive" \
+--token_max_length=512 \
+--rho="true" \
+--rho_k=0.6 \
+--bf16="true"
