@@ -1,0 +1,105 @@
+2-shot_cot: >
+  You are a doctor. Generate clinical rationale and diagnose the patient based on the information your colleague gave you. You can utilize the clinical rationale. Answer me with only either "Alzheimer's Disease", "Mild Cognitive Impairment", or "Normal Cognition". You should follow the style of the history.
+
+  [Example 1]
+
+  Patient Description:
+  This patient is a X-year-old male who has completed Y years of education and is married. The patient has a Mini-mental State Examination score of Z/30 and has no APOE4 gene. 
+  Also, based on their MRI scans: 
+  - This patient has Severe hippocampal atrophy. 
+  - This patient has Severe Amygdala atrophy. 
+  - This patient has Severe entorhinal atrophy. 
+  - This patient has Severe parahippocampal atrophy. 
+  - This patient has Severe medial temporal lobe atrophy. 
+  - This patient has Severe fusiform atrophy. 
+  - This patient has Severe precuneus atrophy. 
+  - This patient has Severe superior parietal atrophy. 
+  - This patient has Severe medial temporal lobe atrophy compared to the cerebral cortex. 
+  - This patient has Severe parietal lobe atrophy compared to the cerebral cortex. 
+  - This patient has Severe ventricle enlargement. 
+  - The shape of the Temporal direction of the Lateral Ventricle is Round. 
+  - The shape of the Frontal direction of the Lateral Ventricle is Round. 
+  - This patient has Severe frontal lobe atrophy. 
+  - This patient has Severe temporal lobe atrophy. 
+  - This patient has Severe parietal lobe atrophy. 
+  - This patient has Severe occipital lobe atrophy. 
+  - Overall, there is Severe atrophy in this patient’s cerebral cortex. 
+  - There are no signs of vascular disease. 
+
+  What is the diagnosis of this patient?
+  (A) Alzheimer's Disease
+  (B) Mild Cognitive Impairment
+  (C) Normal Cognition
+
+  Clinical Rationale:
+  The patient, a X-year-old male, presents with severe atrophy in multiple areas of the brain as determined by MRI scans. There is severe hippocampal atrophy, which plays a critical role in the formation of new memories and also interacts with the amygdala, which has also shown severe atrophy, to regulate emotions. The entorhinal cortex, another area showing severe atrophy, is known to be an important memory center in the brain. The atrophy in the parahippocampal gyrus, a region involved in encoding and retrieving memory, also aligns with memory impairment.
+
+
+  Moreover, severe atrophy is also noted in the fusiform gyrus, involved in high-level visual processing and face recognition, the precuneus, involved in visuospatial processing, and the superior parietal lobule, which plays a role in spatial orientation and perception. Severe atrophy in the medial temporal lobe, an area important for long-term memory, further supports memory impairment.
+
+
+  The severe parietal lobe atrophy can affect sensory processing and spatial positioning, while the severe frontal lobe atrophy can affect aspects of decision making and cognitive processing. The severe occipital lobe atrophy can impact visual processing. Additionally, severe ventricle enlargement is often associated with atrophy of the surrounding brain tissue. 
+
+
+  Furthermore, there is overall severe atrophy in the patient’s cerebral cortex, which is responsible for higher brain functions, including reasoning, language, and sensory perception. The absence of signs of vascular disease indicates this cognitive impairment is not due to vascular dementia.
+
+
+  The Mini-mental State Examination score of Z/30 indicates mild cognitive impairment. Despite the patient's high level of education, the cognitive impact of the extensive brain atrophy is evident. Furthermore, the patient does not carry the APOE4 gene, which is known to increase the risk of Alzheimer's disease, indicating that the cognitive decline is likely not due to this form of dementia. 
+
+
+  Taken together, these symptoms and findings indicate significant neurodegeneration and cognitive impairment, which are characteristic of a major neurocognitive disorder.
+
+  Diagnosis: 
+  (A) Alzheimer's Disease
+
+  [Example 2]
+
+  Patient Description:
+  This patient is a X-year-old Male who has completed Y years of education and is Married. The patient has a Mini-mental State Examination score of Z/30 and has no APOE4 gene. 
+  Also, based on their MRI scans: 
+  - This patient has No hippocampal atrophy. 
+  - This patient has No Amygdala atrophy. 
+  - This patient has No entorhinal atrophy. 
+  - This patient has Mild parahippocampal atrophy. 
+  - This patient has Mild medial temporal lobe atrophy. 
+  - This patient has Severe fusiform atrophy. 
+  - This patient has Severe precuneus atrophy. 
+  - This patient has Severe superior parietal atrophy. 
+  - This patient has No medial temporal lobe atrophy compared to the cerebral cortex. 
+  - This patient has No parietal lobe atrophy compared to the cerebral cortex.
+  - This patient has No ventricle enlargement. 
+  - The shape of the Temporal direction of the Lateral Ventricle is Sharp. 
+  - The shape of the Frontal direction of the Lateral Ventricle is Sharp. 
+  - This patient has Severe frontal lobe atrophy. 
+  - This patient has Mild temporal lobe atrophy. 
+  - This patient has Severe parietal lobe atrophy. 
+  - This patient has Mild occipital lobe atrophy. 
+  - Overall, there is Severe atrophy in this patient’s cerebral cortex. 
+  - There are no signs of vascular disease.
+
+  What is the diagnosis of this patient?
+  (A) Alzheimer's Disease
+  (B) Mild Cognitive Impairment
+  (C) Normal Cognition 
+
+  Clinical Rationale:
+  The patient's age and education level are key factors to consider. At X years old, cognitive decline is not uncommon, yet the patient has successfully completed Y years of education suggesting a certain level of cognitive reserve. The patient's Mini-mental State Examination score of Z/30 indicates a slight cognitive impairment, as the maximum score is 30, but the patient is not severely cognitively impaired. 
+
+
+  Furthermore, the absence of the APOE4 gene, which is known to be a risk factor for Alzheimer's, is a positive sign. The patient's MRI scans show various levels of atrophy in the brain, with severe atrophy noted in the fusiform, precuneus, superior parietal regions, and in the cerebral cortex overall. Mild atrophy is observed in the parahippocampal region, medial temporal lobe, temporal lobe, and occipital lobe. 
+
+
+  No atrophy was noted in the hippocampus, amygdala, entorhinal region, medial temporal lobe compared to the cerebral cortex, and the parietal lobe compared to the cerebral cortex, which are areas often affected in Alzheimer's disease. There are also no signs of ventricle enlargement, which can be associated with various brain diseases. The sharpness of the Temporal and Frontal direction of the Lateral Ventricle is typical and does not indicate any abnormality. Lastly, there are no signs of vascular disease, which can be a cause of cognitive decline. 
+
+
+  The pattern of atrophy, especially severe atrophy in the cerebral cortex, could be indicative of some neurological condition affecting cognitive functions. However, the absence of atrophy in some key regions of the brain and the absence of vascular disease, as well as the relatively high score in Mini-mental State Examination, suggests that this cognitive impairment is not severe.
+
+  Diagnosis: 
+  (B) Mild Cognitive Impairment
+
+  [Example 3]
+
+  Patient Description:
+  {patient_data}
+
+  Clinical Rationale:

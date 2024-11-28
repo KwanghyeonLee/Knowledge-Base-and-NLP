@@ -1,0 +1,12 @@
+0_shot: >
+  Generate detailed clinical rationales for the diagnosis ("Diagnosis:") based on the patient description. These rationales should be the crucial cue for the diagnosis. Pretend that you don't know the diagnosis ("Diagnosis:").
+
+  [Example 1]
+
+  Patient Description:
+  {patient_data}
+
+  Diagnosis:
+  {label} 
+
+  Clinical Rationale:
