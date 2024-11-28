@@ -1,0 +1,262 @@
+# reasoning_2class_config.yaml
+
+############ LLaMA2 7B ################
+train_parcel:
+  # ModelArguments
+  model_name_or_path: /path/to/best/llama2/model/checkpoint/dir
+  freeze_LM: true
+  model_4bit: false
+  img_token_num: 2
+  img_input_channel: 15
+  resnet_depth: 50
+  resnet_fc_dim: 2048
+  # TrainingArguments
+  img_type: parcel
+  wandb_project: MedicalCoT
+  wandb_name: llama2_parcel
+  save_dir: pytorch_lightning/checkpoint/save/dir
+  devices: [0,1,2,3,4,5,6,7]
+  max_epochs: 50
+  do_train: true
+  do_test: false
+  lr: 0.00005
+  scheduler_type: ReduceLROnPlateau
+  strategy: deepspeed_stage_3
+  # data
+  source_max_len: 1024
+  target_max_len: 1024
+  predict_with_generate: false
+  per_device_train_batch_size: 2
+  per_device_eval_batch_size: 2
+
+train_parcel_resnet152:
+  # ModelArguments
+  model_name_or_path: /path/to/best/llama2/model/checkpoint/dir
+  freeze_LM: true
+  model_4bit: false
+  img_token_num: 2
+  img_input_channel: 15
+  resnet_depth: 152
+  resnet_fc_dim: 512
+  # TrainingArguments
+  img_type: parcel
+  wandb_project: MedicalCoT
+  wandb_name: llama2_parcel_resnet152
+  save_dir: pytorch_lightning/checkpoint/save/dir
+  devices: [0,1,2,3,4,5,6,7]
+  max_epochs: 50
+  do_train: true
+  do_test: false
+  lr: 0.00005
+  scheduler_type: ReduceLROnPlateau
+  strategy: deepspeed_stage_3
+  # data
+  source_max_len: 1024
+  target_max_len: 1024
+  predict_with_generate: false
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+
+train_parcel_wo_rationale:
+  # ModelArguments
+  model_name_or_path: /path/to/best/llama2/model/checkpoint/dir
+  freeze_LM: true
+  model_4bit: false
+  img_token_num: 2
+  img_input_channel: 15
+  resnet_depth: 50
+  resnet_fc_dim: 2048
+  # TrainingArguments
+  img_type: parcel
+  wandb_project: MedicalCoT
+  wandb_name: llama2_parcel
+  save_dir: pytorch_lightning/checkpoint/save/dir
+  devices: [0,1,2,3,4,5,6,7]
+  max_epochs: 50
+  do_train: true
+  do_test: false
+  lr: 0.00005
+  scheduler_type: ReduceLROnPlateau
+  strategy: deepspeed_stage_3
+  # data
+  source_max_len: 1024
+  target_max_len: 1024
+  predict_with_generate: false
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+
+
+############### OPT1.3B #####################
+train_parcel_opt1:
+  # ModelArguments
+  model_name_or_path: /path/to/best/opt1.3b/model/checkpoint/dir
+  freeze_LM: true
+  model_4bit: false
+  img_token_num: 2
+  img_input_channel: 15
+  resnet_depth: 50
+  resnet_fc_dim: 2048
+  # TrainingArguments
+  img_type: parcel
+  wandb_project: MedicalCoT
+  wandb_name: opt6_parcel
+  save_dir: pytorch_lightning/checkpoint/save/dir
+  devices: [0,1,2,3,4,5,6,7]
+  max_epochs: 50
+  do_train: true
+  do_test: false
+  lr: 0.00005
+  scheduler_type: ReduceLROnPlateau
+  strategy: deepspeed_stage_3
+  # data
+  source_max_len: 1024
+  target_max_len: 1024
+  predict_with_generate: false
+  per_device_train_batch_size: 2
+  per_device_eval_batch_size: 2
+
+train_parcel_opt1_resnet152:
+  # ModelArguments
+  model_name_or_path: /path/to/best/opt1.3b/model/checkpoint/dir
+  freeze_LM: true
+  model_4bit: false
+  img_token_num: 2
+  img_input_channel: 15
+  resnet_depth: 152
+  resnet_fc_dim: 512
+  # TrainingArguments
+  img_type: parcel
+  wandb_project: MedicalCoT
+  wandb_name: opt6_parcel_resnet152
+  save_dir: pytorch_lightning/checkpoint/save/dir
+  devices: [0,1,2,3,4,5,6,7]
+  max_epochs: 50
+  do_train: true
+  do_test: false
+  lr: 0.00005
+  scheduler_type: ReduceLROnPlateau
+  strategy: deepspeed_stage_3
+  # data
+  source_max_len: 1024
+  target_max_len: 1024
+  predict_with_generate: false
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+
+train_parcel_opt1_wo_rationale:
+  # ModelArguments
+  model_name_or_path: /path/to/best/opt1.3b/model/checkpoint/dir
+  freeze_LM: true
+  model_4bit: false
+  img_token_num: 2
+  img_input_channel: 15
+  resnet_depth: 50
+  resnet_fc_dim: 2048
+  # TrainingArguments
+  img_type: parcel
+  wandb_project: MedicalCoT
+  wandb_name: opt1_parcel_wo_rationale
+  save_dir: pytorch_lightning/checkpoint/save/dir
+  devices: [0,1,2,3,4,5,6,7]
+  max_epochs: 50
+  do_train: true
+  do_test: false
+  lr: 0.00005
+  scheduler_type: ReduceLROnPlateau
+  strategy: deepspeed_stage_3
+  # data
+  source_max_len: 1024
+  target_max_len: 1024
+  predict_with_generate: false
+  per_device_train_batch_size: 2
+  per_device_eval_batch_size: 2
+
+
+############### OPT6.7B #####################
+train_parcel_opt6:
+  # ModelArguments
+  model_name_or_path: /path/to/best/opt6.7b/model/checkpoint/dir
+  freeze_LM: true
+  model_4bit: false
+  img_token_num: 4
+  img_input_channel: 15
+  resnet_depth: 50
+  resnet_fc_dim: 2048
+  # TrainingArguments
+  img_type: parcel
+  wandb_project: MedicalCoT
+  wandb_name: opt6_parcel
+  save_dir: pytorch_lightning/checkpoint/save/dir
+  devices: [0,1,2,3,4,5,6,7]
+  max_epochs: 50
+  do_train: true
+  do_test: false
+  lr: 0.00005
+  scheduler_type: ReduceLROnPlateau
+  strategy: deepspeed_stage_3
+  # data
+  source_max_len: 1024
+  target_max_len: 1024
+  predict_with_generate: false
+  per_device_train_batch_size: 2
+  per_device_eval_batch_size: 2
+
+train_parcel_opt6_resnet152:
+  # ModelArguments
+  model_name_or_path: /path/to/best/opt6.7b/model/checkpoint/dir
+  freeze_LM: true
+  model_4bit: false
+  img_token_num: 2
+  img_input_channel: 15
+  resnet_depth: 152
+  resnet_fc_dim: 512
+  # TrainingArguments
+  img_type: parcel
+  wandb_project: MedicalCoT
+  wandb_name: opt6_parcel_resnet152
+  save_dir: pytorch_lightning/checkpoint/save/dir
+  devices: [0,1,2,3,4,5,6,7]
+  max_epochs: 50
+  do_train: true
+  do_test: false
+  lr: 0.00005
+  scheduler_type: ReduceLROnPlateau
+  strategy: deepspeed_stage_3
+  # data
+  source_max_len: 1024
+  target_max_len: 1024
+  predict_with_generate: false
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+
+train_parcel_opt6_wo_rationale:
+  # ModelArguments
+  model_name_or_path: /path/to/best/opt6.7b/model/checkpoint/dir
+  freeze_LM: true
+  model_4bit: false
+  img_token_num: 2
+  img_input_channel: 15
+  resnet_depth: 50
+  resnet_fc_dim: 2048
+  # TrainingArguments
+  img_type: parcel
+  wandb_project: MedicalCoT
+  wandb_name: opt6_parcel_wo_rationale
+  save_dir: pytorch_lightning/checkpoint/save/dir
+  devices: [0,1,2,3,4,5,6,7]
+  max_epochs: 50
+  do_train: true
+  do_test: false
+  lr: 0.00005
+  scheduler_type: ReduceLROnPlateau
+  strategy: deepspeed_stage_3
+  # data
+  source_max_len: 1024
+  target_max_len: 1024
+  predict_with_generate: false
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+
+
+
+
