@@ -84,3 +84,7 @@
 * Multitask Deep Learning for Joint Detection of Necrotizing Viral and Noninfectious Retinitis From Common Blood and Serology Test Data (IOVS 2024) - Kai Tzu-iunn Ong, Taeyoon Kwon, Harok Jang, Min Kim, Christopher Seungkyu Lee, Suk Ho Byeon, Sung Soo Kim, Jinyoung Yeo, Eun Young Choi.
 
   * This paper proposes a multitask deep learning framework for joint detection of necrotizing viral and noninfectious retinitis from common blood and serology test data.
+
+* Coffee-Gym: An Environment for Learning Feedback for Code Editing (EMNLP 2024) - Hyungjoo Chae, Taeyoon Kwon, Seungjun Moon, Yongho Song, Dongjin Kang, Kai Tzu-iunn Ong, Beong-woo Kwak, Seonghyeon Bae, Seung-won Hwang, and Jinyoung Yeo.
+
+  * This paper presents Coffee-Gym, a comprehensive RL environment for training models that provide feedback on code editing.
