@@ -1,0 +1,120 @@
+humaneval: 
+  prompt: |-
+    You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+    ## Instruction:
+    Problem Description:
+    {description}
+
+    Incorrect Code:
+    {incorrect_code}
+
+    Please generate feedback for the wrong code.
+
+    ## Response:
+  input_variables: 
+    - "description"
+    - "incorrect_code"
+humanevalplus:
+  prompt: |-
+    You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+    ## Instruction:
+    Problem Description:
+    {description}
+
+    Incorrect Code:
+    {incorrect_code}
+
+    Please generate feedback for the wrong code.
+
+    ## Response:
+  input_variables: 
+    - "description"
+    - "incorrect_code"
+mbpp: 
+  prompt: |-
+    You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+    ## Instruction:
+    Problem Description:
+    {description}
+
+    Incorrect Code:
+    {incorrect_code}
+
+    Please generate feedback for the wrong code.
+
+    ## Response:
+  input_variables: 
+    - "description"
+    - "incorrect_code"
+
+mbppplus: 
+  prompt: |-
+    You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+    ## Instruction:
+    Problem Description:
+    {description}
+
+    Incorrect Code:
+    {incorrect_code}
+
+    Please generate feedback for the wrong code.
+
+    ## Response:
+  input_variables: 
+    - "description"
+    - "incorrect_code"
+
+feedback:
+  prompt: |-
+    You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+    ## Instruction:
+    Problem Description:
+    {description}
+     - output format: {output_format}
+     - input format: {input_format}
+
+    Incorrect Code:
+    ```python
+    {wrong_code}
+    ```
+
+    Please generate feedback for the wrong code.
+
+    ## Response:
+  input_variables: 
+    - "description"
+    - "output_format"
+    - "input_format"
+    - "wrong_code"
+
+refine:
+  prompt: |-
+    You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+    ## Instruction:
+    Problem Description:
+    {description}
+     - output format: {output_format}
+     - input format: {input_format}
+
+    Wrong Code:
+    ```python
+    {wrong_code}
+    ```
+    
+    Feedback: {feedback}
+
+    Using the given description, wrong code, and the generated feedback, please generate the correct code.
+
+    ## Response:
+  input_variables: 
+    - "description"
+    - "output_format"
+    - "input_format"
+    - "wrong_code"
+    - "feedback"

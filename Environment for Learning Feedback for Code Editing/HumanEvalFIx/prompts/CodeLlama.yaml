@@ -1,0 +1,88 @@
+critic: |
+  <s>[INST]
+  Provide feedback on the errors in the given code and suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}
+
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+  [/INST]
+  ### Feedback ###
+
+editor: |
+  <s>[INST]
+  Provide feedback on the errors in the given code and suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}
+
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+  [/INST]
+  ### Feedback ###
+  {feedback}
+
+  ### Correct Code ###
+  ```python
+  {header}
+
+
+editor_execution_feedback: |
+  <s>[INST]
+  Suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}
+
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  ### Supplementary Comment ###
+  {error_msg}
+  [/INST]
+  ### Correct Code ###
+  ```python
+  {header}
+
+editor_vanilla: |
+  <s>[INST]
+  Suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}  
+
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+  [/INST]
+  ### Correct Code ###
+  ```python
+  {header}

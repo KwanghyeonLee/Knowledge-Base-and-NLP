@@ -1,0 +1,106 @@
+critic: |
+  Please generate feedback for the Incorrect code.
+  
+  Problem Description:
+  {problem}
+    - Input: {sample_input}
+    - Output: {sample_output}
+
+  Incorrect Code:
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  ## Response:
+
+critic_ours: |
+  You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+  ## Instruction:
+  Problem Description:
+  {problem}
+    - Input: {sample_input}
+    - Output: {sample_output}
+
+  Incorrect Code:
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  Please generate feedback for the Incorrect code.
+
+  ## Response:
+
+editor: |
+  Suggest the correct code that addresses the described problem.
+
+  Problem Description:
+  {problem}
+  - Input: {sample_input}
+  - Output: {sample_output}
+
+  Incorrect Code:
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  Feedback: 
+  {feedback}
+
+  Please return all completed codes in one code block.
+  This code block should be in the following format:
+  ```python
+  # Your codes here
+  ```
+
+
+editor_execution_feedback: |
+  ## Instruction:
+  Suggest the correct code that addresses the described problem.
+
+  Problem Description:
+  {problem}
+  - Input: {sample_input}
+  - Output: {sample_output}
+
+  Incorrect Code:
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  Feedback: {error_msg}
+
+  Please return all completed codes in one code block.
+  This code block should be in the following format:
+  ```python
+  # Your codes here
+  ```
+
+  ## Response:
+
+editor_vanilla: |
+  ## Instruction:
+  Suggest the correct code that addresses the described problem.
+
+  Problem Description:
+  {problem}
+  - Input: {sample_input}
+  - Output: {sample_output}
+
+  Incorrect Code:
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  Please return all completed codes in one code block.
+  This code block should be in the following format:
+  ```python
+  # Your codes here
+  ```
+
+  ## Response:

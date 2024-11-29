@@ -1,0 +1,62 @@
+{
+    "wo_wrong_feedback_train": {
+        "results": {
+            "pearson_corr": 0.08547008547008542,
+            "pearson_p_value": 0.006843385609500345,
+            "spearman_corr": 0.08547008547008546,
+            "spearman_p_value": 0.006843385609500308,
+            "kendall_corr": 0.08547008547008547,
+            "kendall_p_value": 0.0069037926243908,
+            "mcc": 0.08547008547008547
+        },
+        "error_count": 0
+    },
+    "scott_eval": {
+        "results": {
+            "pearson_corr": 0.148870760863662,
+            "pearson_p_value": 2.265307122747734e-06,
+            "spearman_corr": 0.14887076086366197,
+            "spearman_p_value": 2.2653071227477356e-06,
+            "kendall_corr": 0.14887076086366197,
+            "kendall_p_value": 2.5342784086899135e-06,
+            "mcc": 0.14887076086366197
+        },
+        "error_count": 0
+    },
+    "deepseek_instruct": {
+        "results": {
+            "pearson_corr": 0.07692307692307687,
+            "pearson_p_value": 0.014970800645441866,
+            "spearman_corr": 0.07692307692307691,
+            "spearman_p_value": 0.014970800645441781,
+            "kendall_corr": 0.07692307692307691,
+            "kendall_p_value": 0.015044556103596878,
+            "mcc": 0.07692307692307693
+        },
+        "error_count": 0
+    },
+    "gpt3turbo_neweval": {
+        "results": {
+            "pearson_corr": 0.10069969551599464,
+            "pearson_p_value": 0.0014299858774329125,
+            "spearman_corr": 0.1006996955159947,
+            "spearman_p_value": 0.0014299858774328442,
+            "kendall_corr": 0.10069969551599471,
+            "kendall_p_value": 0.001458525970674649,
+            "mcc": 0.1006996955159947
+        },
+        "error_count": 0
+    },
+    "gpt4turbo_main_assess": {
+        "results": {
+            "pearson_corr": 0.012013847933829322,
+            "pearson_p_value": 0.7043539049481722,
+            "spearman_corr": 0.012013847933829369,
+            "spearman_p_value": 0.7043539049481728,
+            "kendall_corr": 0.012013847933829369,
+            "kendall_p_value": 0.7041523620568457,
+            "mcc": 0.012013847933829369
+        },
+        "error_count": 0
+    }
+}

@@ -1,0 +1,84 @@
+critic: |
+  Provide feedback on the errors in the given code and suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}
+
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  ### Feedback ###
+
+editor: |
+  Provide feedback on the errors in the given code and suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}
+
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  ### Feedback ###
+  {feedback}
+
+  ### Correct Code ###
+  ```python
+  {header}
+
+
+editor_execution_feedback: |
+  Suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}
+
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  ### Supplementary Comment ###
+  {error_msg}
+
+  ### Correct Code ###
+  ```python
+  {header}
+
+editor_vanilla: |
+  Suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}
+
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  ### Correct Code ###
+  ```python
+  {header}

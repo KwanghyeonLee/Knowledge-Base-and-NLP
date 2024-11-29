@@ -1,0 +1,115 @@
+critic: |
+  You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer.
+  ### Instruction:
+  Provide feedback on the errors in the given code and suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}
+
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  ### Response:
+  ### Feedback ###
+
+critic_ours: |
+  You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+  ## Instruction:
+  Problem Description:
+  {problem}
+    - Input: {sample_input}
+    - Output: {sample_output}
+
+  Incorrect Code:
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  Please generate feedback for the wrong code.
+
+  ## Response:
+
+editor: |
+  You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer.
+  ## Instruction:
+  Suggest the correct code that addresses the described problem.
+
+  Problem Description:
+  {problem}
+  - Input: {sample_input}
+  - Output: {sample_output}
+
+  Incorrect Code:
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  Feedback: {feedback}
+
+  Please return all completed codes in one code block.
+  This code block should be in the following format:
+  ```python
+  # Your codes here
+  ```
+
+  ## Response:
+
+
+editor_execution_feedback: |
+  You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer.
+  ### Instruction:
+  Suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}
+
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  ### Supplementary Comment ###
+  {error_msg}
+
+  ### Response:
+  ### Correct Code ###
+  ```python
+  {header}
+
+editor_vanilla: |
+  You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer.
+  ### Instruction:
+  Suggest the correct code to address the described problem.
+
+  ### Problem Description ###
+  {problem}
+  Input:
+  {sample_input}
+  Output:
+  {sample_output}
+  
+  ### Incorrect Code ###
+  ```python
+  {header}
+  {buggy_solution}
+  ```
+
+  ### Response:
+  ### Correct Code ###
+  ```python
+  {header}

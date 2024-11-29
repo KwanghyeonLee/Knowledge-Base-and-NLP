@@ -1,0 +1,56 @@
+.
+├── correlation.py
+├── editing_evaluator
+│   ├── gpt3turbo_neweval
+│   │   ├── fragments
+│   │   │   ├── gt_correct_feedback_scoring_results_sampling1_part0.json
+│   │   │   └── gt_wrong_feedback_scoring_results_sampling1_part0.json
+│   │   ├── gt_correct_feedback_scoring_results_sampling1.json
+│   │   ├── gt_wrong_feedback_scoring_results_sampling1.json
+│   │   └── metrics.csv
+│   ├── gpt4turbo_main_assess
+│   │   ├── fragments
+│   │   │   ├── gt_correct_feedback_scoring_results_sampling1_part0.json
+│   │   │   └── gt_wrong_feedback_scoring_results_sampling1_part0.json
+│   │   ├── gt_correct_feedback_scoring_results_sampling1.json
+│   │   ├── gt_wrong_feedback_scoring_results_sampling1.json
+│   │   └── metrics.csv
+│   └── scott_eval
+│       ├── fragments
+│       │   ├── gt_correct_feedback_scoring_results_sampling1_part0.json
+│       │   └── gt_wrong_feedback_scoring_results_sampling1_part0.json
+│       ├── gt_correct_feedback_scoring_results_sampling1.json
+│       ├── gt_wrong_feedback_scoring_results_sampling1.json
+│       └── metrics.csv
+├── geval_evaluator
+│   ├── chatgpt
+│   │   ├── gt_correct_feedback_scoring_results.json
+│   │   ├── gt_wrong_feedback_scoring_results.json
+│   │   └── metrics.csv
+│   ├── chatgpt_0shot
+│   │   ├── gt_correct_feedback_only_eval_feedback_0shot_cost.txt
+│   │   ├── gt_correct_feedback_only_eval_feedback_0shotscoring_results.json
+│   │   ├── gt_wrong_feedback_only_eval_feedback_0shot_cost.txt
+│   │   ├── gt_wrong_feedback_only_eval_feedback_0shotscoring_results.json
+│   │   └── only_eval_feedback_0shot_metrics.csv
+│   ├── chatgpt_2shot
+│   │   ├── gt_correct_feedback_only_eval_feedback_2shot_cost.txt
+│   │   ├── gt_correct_feedback_only_eval_feedback_2shotscoring_results.json
+│   │   ├── gt_wrong_feedback_only_eval_feedback_2shot_cost.txt
+│   │   ├── gt_wrong_feedback_only_eval_feedback_2shotscoring_results.json
+│   │   └── only_eval_feedback_2shot_metrics.csv
+│   ├── gpt4
+│   │   ├── gt_correct_feedback_scoring_results.json
+│   │   ├── gt_wrong_feedback_scoring_results.json
+│   │   └── metrics.csv
+│   ├── gpt4_0shot
+│   │   ├── gt_correct_feedback_only_eval_feedback_0shotscoring_results.json
+│   │   ├── gt_wrong_feedback_only_eval_feedback_0shotscoring_results.json
+│   │   └── only_eval_feedback_0shot_metrics.csv
+│   └── gpt4_2shot
+│       ├── gt_correct_feedback_only_eval_feedback_2shotscoring_results.json
+│       ├── gt_wrong_feedback_only_eval_feedback_2shotscoring_results.json
+│       └── only_eval_feedback_2shot_metrics.csv
+└── out.txt
+
+14 directories, 39 files

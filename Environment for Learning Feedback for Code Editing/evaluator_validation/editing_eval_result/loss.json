@@ -1,0 +1,22 @@
+{
+    "wo_wrong_feedback_train": {
+        "MSE_loss": 0.4183155882438976,
+        "CE_loss": 6.329226493835449
+    },
+    "scott_eval": {
+        "MSE_loss": 0.40796362666521074,
+        "CE_loss": 6.455976486206055
+    },
+    "deepseek_instruct": {
+        "MSE_loss": 0.42802047121724673,
+        "CE_loss": 6.10120153427124
+    },
+    "gpt3turbo_neweval": {
+        "MSE_loss": 0.41659143915451036,
+        "CE_loss": 5.931019306182861
+    },
+    "gpt4turbo_main_assess": {
+        "MSE_loss": 0.4501811323394818,
+        "CE_loss": 6.008697509765625
+    }
+}

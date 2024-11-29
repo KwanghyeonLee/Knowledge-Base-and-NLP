@@ -1,0 +1,45 @@
+
+refine:
+  prompt: |-
+    Provide feedback on the errors in the given code and suggest the correct code to address the described problem.
+    Description:
+    {description}
+     - output format: {output_format}
+     - input format: {input_format}
+    Incorrect code:
+    ```python
+    {wrong_code}
+    ```
+    Feedback:{feedback}
+
+    Correct code:
+  input_variables:
+    - "description"
+    - "output_format"
+    - "input_format"
+    - "wrong_code"
+    - "feedback"
+
+feedback:
+  prompt: |-
+    You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+    ## Instruction:
+    Problem Description:
+    {description}
+     - output format: {output_format}
+     - input format: {input_format}
+
+    Incorrect Code:
+    ```python
+    {wrong_code}
+    ```
+
+    Please generate feedback for the wrong code.
+
+    ## Response:
+  input_variables: 
+    - "description"
+    - "output_format"
+    - "input_format"
+    - "wrong_code"

@@ -1,0 +1,63 @@
+humaneval: 
+  prompt: |-
+    You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+    ## Instruction
+    Here is the given code to do completion
+    ```{language}
+    {original_prompt}
+    ```
+    Please continue to complete the fuction with {language} programming language. You are not allowed to modify the given code and do the completion only.
+
+    Please return all completed codes in one code block.
+    This code block should be in the following format:
+    ```{language}
+    # Your codes here
+    ```
+
+    ## Response
+  input_variables: 
+    - "language"
+    - "original_prompt"
+mbpp: 
+  prompt: |-
+    You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
+
+    ## Instruction
+    Here is the given problem and test examples:
+    {original_prompt}
+
+    Please use the {language} programming language to solve this problem.
+    Please make sure that your code includes the functions from the test samples and that the input and output formats of these functions match the test samples.
+
+    Please return all completed codes in one code block.
+    This code block should be in the following format:
+    ```{language}
+    # Your codes here
+    ```
+
+    ## Response
+  input_variables:
+    - "language"
+    - "original_prompt"
+
+refine:
+  prompt: |-
+    Provide feedback on the errors in the given code and suggest the correct code to address the described problem.
+    Description:
+    {description}
+     - output format: {output_format}
+     - input format: {input_format}
+    Incorrect code:
+    ```python
+    {wrong_code}
+    ```
+    Feedback:{feedback}
+
+    Correct code:
+  input_variables:
+    - "description"
+    - "output_format"
+    - "input_format"
+    - "wrong_code"
+    - "feedback"

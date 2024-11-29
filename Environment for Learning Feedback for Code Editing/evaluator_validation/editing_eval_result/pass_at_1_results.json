@@ -1,0 +1,22 @@
+{
+    "wo_wrong_feedback_train": {
+        "correct_feedback_pass_at_1": 0.364,
+        "wrong_feedback_pass_at_1": 0.284
+    },
+    "scott_eval": {
+        "correct_feedback_pass_at_1": 0.52,
+        "wrong_feedback_pass_at_1": 0.372
+    },
+    "deepseek_instruct": {
+        "correct_feedback_pass_at_1": 0.36,
+        "wrong_feedback_pass_at_1": 0.288
+    },
+    "gpt3turbo_neweval": {
+        "correct_feedback_pass_at_1": 0.434,
+        "wrong_feedback_pass_at_1": 0.336
+    },
+    "gpt4turbo_main_assess": {
+        "correct_feedback_pass_at_1": 0.53,
+        "wrong_feedback_pass_at_1": 0.518
+    }
+}

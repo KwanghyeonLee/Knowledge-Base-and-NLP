@@ -1,0 +1,18 @@
+{
+    "gpt4_0shot": {
+        "MSE_loss": 0.4145,
+        "CE_loss": null
+    },
+    "chatgpt_2shot": {
+        "MSE_loss": 0.5715,
+        "CE_loss": null
+    },
+    "gpt4_2shot": {
+        "MSE_loss": 0.445,
+        "CE_loss": null
+    },
+    "chatgpt_0shot": {
+        "MSE_loss": 0.5745,
+        "CE_loss": null
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "gpt4_0shot": {
+        "results": {
+            "pearson_corr": 0.17120565590906522,
+            "pearson_p_value": 1.2706151431137172e-14,
+            "spearman_corr": 0.17120565590906517,
+            "spearman_p_value": 1.2706151431136085e-14,
+            "kendall_corr": 0.17120565590906517,
+            "kendall_p_value": 1.938615860448205e-14,
+            "mcc": 0.17120565590906517
+        },
+        "error_count": 0
+    },
+    "chatgpt_2shot": {
+        "results": {
+            "pearson_corr": -0.17858279642088554,
+            "pearson_p_value": 8.538027329936915e-16,
+            "spearman_corr": -0.1785827964208854,
+            "spearman_p_value": 8.53802732993789e-16,
+            "kendall_corr": -0.1785827964208854,
+            "kendall_p_value": 1.4112895971802133e-15,
+            "mcc": -0.1785827964208854
+        },
+        "error_count": 0
+    },
+    "gpt4_2shot": {
+        "results": {
+            "pearson_corr": 0.15027938631067567,
+            "pearson_p_value": 1.4294301764521295e-11,
+            "spearman_corr": 0.15027938631067575,
+            "spearman_p_value": 1.429430176452035e-11,
+            "kendall_corr": 0.1502793863106757,
+            "kendall_p_value": 1.8295320608152144e-11,
+            "mcc": 0.15027938631067572
+        },
+        "error_count": 0
+    },
+    "chatgpt_0shot": {
+        "results": {
+            "pearson_corr": -0.19000000000000006,
+            "pearson_p_value": 1.0355386598778506e-17,
+            "spearman_corr": -0.19,
+            "spearman_p_value": 1.0355386598778493e-17,
+            "kendall_corr": -0.19,
+            "kendall_p_value": 1.980457863714678e-17,
+            "mcc": -0.19
+        },
+        "error_count": 0
+    }
+}
