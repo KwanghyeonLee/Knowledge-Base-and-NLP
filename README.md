@@ -56,3 +56,31 @@
 * Inductive Reasoning Elicitation for Temporal Relation Understanding (EACL 2024) - Jongho Kim, Dohyeon Lee, Minsoo Kim, and Seung-won Hwang.
 
   * The proposed TRN (timeline reasoning network) outperforms previous methods for temporal reading comprehension and temporal relation extraction tasks, by effectively resolving the spurious overlaps in answers using the predicted timeline.
+
+* Train-Attention: Meta-Learning Where to Focus in Continual Knowledge Learning (NeurIPS 2024) - Yeongbin Seo, Dongha Lee, and Jinyoung Yeo.
+
+  * The proposed Train-Attention, is a meta-learning framework that adaptively adjusts the attention mechanism during training to focus on relevant tokens, thereby improving the model's ability to learn new information without forgetting previously acquired knowledge.
+
+* Large Language Models Are Clinical Reasoners: Reasoning-Aware Diagnosis Framework with Prompt-Generated Rationales (AAAI 2024) - Taeyoon Kwon, Kai Tzu-iunn Ong, Dongjin Kang, Seungjun Moon, Jeong Ryong Lee, Dosik Hwang, Beomseok Sohn, Yongsik Sim, Dongha Lee, and Jinyoung Yeo.
+
+  * The proposed reasoning-aware diagnosis framework, is a novel framework that leverages LLMs as unreliable teachers and selectively distills consistent and helpful rationales via alignment filters.
+
+* Language Models as Compilers (EMNLP 2024) - Hyungjoo Chae, Yeonghyeon Kim, Seungone Kim, Kai Tzu-iunn Ong, Beong-woo Kwak, Moohyeon Kim, Seonghwan Kim, Taeyoon Kwon, Jiwan Chung, Youngjae Yu, and Jinyoung Yeo.
+
+  * The proposed language models as compilers, is a novel framework that uses psuedocode to have a better control over LLMs' reasoning process.
+
+* Can Large Language Models be Good Emotional Supporter? Mitigating Preference Bias on Emotional Support Conversation (ACL 2024) - Dongjin Kang, Sunghwan Kim, Taeyoon Kwon, Seungjun Moon, Hyunsouk Cho, Youngjae Yu, Dongha Lee, and Jinyoung Yeo.
+
+  * This paper first investigates the ability of LLMs as emotional supporters, and then proposes a method to mitigate the preference bias of LLMs on emotional support conversations.
+
+* Cactus: Towards Psychological Counseling Conversations using Cognitive Behavioral Theory (EMNLP 2024) - Suyeon Lee, Sunghwan Kim, Minju Kim, Dongjin Kang, Dongil Yang, Harim Kim, Minseok Kang, Dayi Jung, Min Hee Kim, Seungbeen Lee, Kyoung-Mee Chung, Youngjae Yu, Dongha Lee, and Jinyoung Yeo.
+
+  * This paper proposes a psychological counseling conversation framework using cognitive behavioral theory. In addition, it provides a new dataset for psychological counseling conversation.
+
+* Commonsense-augmented Memory Construction and Management in Long-term Conversations via Context-aware Persona Refinement (EACL 2024) - Hana Kim, Kai Tzu-iunn Ong, Seoyeon Kim, Dongha Lee, and Jinyoung Yeo.
+
+  * This paper introduces a novel framework that leverages commonsense-based persona expansion to refine uninformative persona sentences in long-term conversations, enhancing response quality through human-like persona refinement.
+
+* Multitask Deep Learning for Joint Detection of Necrotizing Viral and Noninfectious Retinitis From Common Blood and Serology Test Data (IOVS 2024) - Kai Tzu-iunn Ong, Taeyoon Kwon, Harok Jang, Min Kim, Christopher Seungkyu Lee, Suk Ho Byeon, Sung Soo Kim, Jinyoung Yeo, Eun Young Choi.
+
+  * This paper proposes a multitask deep learning framework for joint detection of necrotizing viral and noninfectious retinitis from common blood and serology test data.
